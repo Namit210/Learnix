@@ -1,0 +1,43 @@
+# Backend specific ignores
+
+# Environment files - NEVER commit these
+.env
+.env.*
+!.env.example
+
+# Database connection test files (temporary)
+test-connection.js
+reset-db.js
+validate-db.js
+
+# Database exports/backups
+*.dump
+*.bak
+*.backup
+database-export.json
+
+# Session and cache files
+sessions/
+cache/
+
+# Uploaded files
+uploads/
+public/uploads/
+static/files/
+
+# API documentation generated files
+docs/generated/
+
+# SSL certificates
+*.pem
+*.key
+*.cert
+*.crt
+
+# pm2 process files
+ecosystem.config.js
+.pm2/
+
+# Build files
+build/
+dist/
